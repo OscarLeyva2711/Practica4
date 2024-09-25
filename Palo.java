@@ -1,4 +1,4 @@
-public enum Palo implements Comparable<Palo>{
+public enum Palo{
     CORAZONES,DIAMANTES,TREBOLES,PICAS
    
     

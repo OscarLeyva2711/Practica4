@@ -10,14 +10,31 @@ public class Carta implements Comparable<Carta> {
 
     // Método que devuelve una cadena con el valor y el palo de la carta
     public String getValor() {
+        switch(valor){
+            case 11:
+                return "J de " + tipo;
+                
+            case 12:
+                return "Q de "+ tipo;
+                case 13:
+                return "K de "+ tipo;
+                case 14: 
+                return "A de "+ tipo;
+
+
+        default:
         return "Valor: " + valor + " de " + tipo;
+        
+        }
     }
 
     // Método que retorna el palo de la carta
     public Palo getTipo() {
         return tipo;
     }
-
+public int getValorEntero(){
+    return this.valor;
+}
     // Método que compara esta carta con otra, primero por el palo y luego por el valor
     @Override
     public int compareTo(Carta otraCarta) {
